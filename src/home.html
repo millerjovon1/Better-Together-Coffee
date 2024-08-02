@@ -8,14 +8,16 @@
 
 
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
   <title>Home - Better Together Coffee Shop Kugenuma Kaigan</title>
 </head>
 
 <body>
-
+    <!-- Your content here -->
   <div class="banner">
-  <nav class="nav-bar">
+  <nav id="navbar" class="nav-bar">
     <div class="logo">
       <a href="./home.html">
         <img class="logo-img"src="./images/better_together_logo.png" alt="yink_banner" width="200px">
@@ -27,8 +29,8 @@
     <div class="nav-menu-container">
       <ul class="nav-menu">
         <li><a href="./store.html">Store</a></li>
-        <li><a href="./yoga.html">Shop Menu</a></li>
-        <li><a href="./yoga.html">Contact</a></li>
+        <li><a href="./home.html#shop-menu-nav">Shop Menu</a></li>
+        <li><a href="./home.html#contact-nav">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -36,17 +38,20 @@
     <div class="home-title">
        <h1 class="m-none p-none">Better Together Coffee Shop</h1>
        <img  class="banner-logo" src="./images/btc_logo.png" alt="">
+       <div class="shop-now-btn">
+        <a href="./store.html"><p>Shop Now</p></a>
+      </div>
     </div>
   </div>
 
-  <div class="main-container">
+  <div  class="main-container">
     <h1 class="border-top">Menu</h1>
     <div class="menu-wrapper">
       <h2 >Drinks</h2>
       <div class="menu">
 
 
-<div class="menu-category">
+<div id="shop-menu-nav" class="menu-category">
   <h3 class="border-bottom">Coffee & Tea</h3>
   <p><em>Oatmilk +100¥</em></p>
   <p><em>Extra Shot +100¥</em></p>
@@ -326,7 +331,7 @@
 <div class="elfsight-app-99cc6a7f-5027-4780-bdaa-e3bd1a7d690a" data-elfsight-app-lazy></div>
 </div>
 <div class="footer">
-  <div class="contact-info">
+  <div id="contact-nav" class="contact-info">
     <h3 class="border-bottom-white">Store Information</h3>
     <p> Email: dasgoodent@gmail.com</p>
     <p><strong>Studio Hours:</strong> Mon-Sat 9am - 5pm</p>
@@ -362,6 +367,7 @@
       </iframe>
     </div>
 </div>
+
 
 <script src="index.js"></script>
 
